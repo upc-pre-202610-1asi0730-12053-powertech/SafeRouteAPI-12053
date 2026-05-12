@@ -114,16 +114,13 @@
       "id": 2,
       "name": "Ruta Sur — Surco / Chorrillos",
       "type": "OUTBOUND",
+      "status": "ACTIVE",
       "driverId": 4,
       "driverName": "Luis Torres",
-      "vehicleId": 2,
-      "vehiclePlate": "XYZ-456",
-      "studentIds": [
-        3,
-        4
-      ],
+      "vehicleId": null,
+      "vehiclePlate": "",
+      "studentIds": [],
       "scheduledStartTime": "06:30",
-      "status": "ACTIVE",
       "organizationId": 1,
       "waypoints": [
         {
@@ -194,33 +191,6 @@
           "lng": -76.998
         }
       ]
-    },
-    {
-      "id": 4,
-      "name": "Ruta Sur - UPC",
-      "type": "RETURN",
-      "status": "ACTIVE",
-      "driverId": 2,
-      "driverName": "Carlos Ramirez",
-      "vehicleId": null,
-      "vehiclePlate": "",
-      "studentIds": [],
-      "scheduledStartTime": "07:30",
-      "organizationId": 1,
-      "waypoints": [
-        {
-          "order": 1,
-          "name": "Stop 1",
-          "lat": -12.065519,
-          "lng": -77.06407
-        },
-        {
-          "order": 2,
-          "name": "Stop 2",
-          "lat": -12.071177,
-          "lng": -77.075689
-        }
-      ]
     }
   ],
   "trips": [
@@ -245,7 +215,7 @@
       "endTime": null,
       "studentsTotal": 3,
       "studentsBoarded": 2,
-      "currentStop": "Av. Angélica Gamarra cdra. 8",
+      "currentStop": "Jr. Las Orquídeas 342",
       "currentLocation": "Av. Universitaria cdra. 48, Los Olivos",
       "organizationId": 1
     },
@@ -521,56 +491,8 @@
       "organizationId": 1,
       "planId": 2,
       "status": "ACTIVE",
-      "startDate": "2026-04-01",
-      "endDate": "2026-06-01"
-    },
-    {
-      "planId": 3,
-      "organizationId": 1,
-      "status": "ACTIVE",
-      "startDate": "2026-05-10",
-      "endDate": "2026-06-09",
-      "id": 2
-    },
-    {
-      "planId": 3,
-      "organizationId": 1,
-      "status": "ACTIVE",
-      "startDate": "2026-05-10",
-      "endDate": "2026-06-09",
-      "id": 3
-    },
-    {
-      "planId": 3,
-      "organizationId": 1,
-      "status": "ACTIVE",
-      "startDate": "2026-05-10",
-      "endDate": "2026-06-09",
-      "id": 4
-    },
-    {
-      "planId": 3,
-      "organizationId": 1,
-      "status": "ACTIVE",
-      "startDate": "2026-05-10",
-      "endDate": "2026-06-09",
-      "id": 5
-    },
-    {
-      "planId": 3,
-      "organizationId": 1,
-      "status": "ACTIVE",
-      "startDate": "2026-05-10",
-      "endDate": "2026-06-09",
-      "id": 6
-    },
-    {
-      "planId": 3,
-      "organizationId": 1,
-      "status": "ACTIVE",
-      "startDate": "2026-05-10",
-      "endDate": "2026-06-09",
-      "id": 7
+      "startDate": "2026-04-01T00:00:00Z",
+      "endDate": "2026-06-01T00:00:00Z"
     }
   ],
   "notifications": [
