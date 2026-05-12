@@ -17,6 +17,22 @@
       "name": "Unidad Escolar Surco & Miraflores",
       "status": "ACTIVE",
       "createdAt": "2026-04-01T10:00:00Z"
+    },
+    {
+      "name": "org-2",
+      "id": 4
+    },
+    {
+      "name": "org-2",
+      "id": 5
+    },
+    {
+      "name": "org-7",
+      "id": 6
+    },
+    {
+      "name": "org-9",
+      "id": 7
     }
   ],
   "users": [
@@ -64,6 +80,42 @@
       "password": "parent456",
       "role": "PARENT",
       "organizationId": 1
+    },
+    {
+      "id": 6,
+      "firstName": "pepe",
+      "lastName": "mar",
+      "email": "pepe@saferoute.pe",
+      "password": "pepe123",
+      "role": "ADMIN",
+      "organizationId": 4
+    },
+    {
+      "id": 7,
+      "firstName": "pepe",
+      "lastName": "luna",
+      "email": "pepe@saferoute",
+      "password": "pepe123",
+      "role": "ADMIN",
+      "organizationId": 5
+    },
+    {
+      "id": 8,
+      "firstName": "Mario",
+      "lastName": "Martinez",
+      "email": "mario@saferoute.pe",
+      "password": "mario123",
+      "role": "ADMIN",
+      "organizationId": 6
+    },
+    {
+      "id": 9,
+      "firstName": "Juan",
+      "lastName": "Perez",
+      "email": "juan@saferoute.pe",
+      "password": "juan123",
+      "role": "ADMIN",
+      "organizationId": 7
     }
   ],
   "routes": [
@@ -114,16 +166,13 @@
       "id": 2,
       "name": "Ruta Sur — Surco / Chorrillos",
       "type": "OUTBOUND",
+      "status": "ACTIVE",
       "driverId": 4,
       "driverName": "Luis Torres",
-      "vehicleId": 2,
-      "vehiclePlate": "XYZ-456",
-      "studentIds": [
-        3,
-        4
-      ],
+      "vehicleId": null,
+      "vehiclePlate": "",
+      "studentIds": [],
       "scheduledStartTime": "06:30",
-      "status": "ACTIVE",
       "organizationId": 1,
       "waypoints": [
         {
@@ -197,28 +246,57 @@
     },
     {
       "id": 4,
-      "name": "Ruta Sur - UPC",
-      "type": "RETURN",
+      "name": "Ruta Sur",
+      "type": "OUTBOUND",
       "status": "ACTIVE",
       "driverId": 2,
       "driverName": "Carlos Ramirez",
       "vehicleId": null,
       "vehiclePlate": "",
-      "studentIds": [],
-      "scheduledStartTime": "07:30",
+      "studentIds": [
+        1,
+        3,
+        5,
+        6,
+        2
+      ],
+      "scheduledStartTime": "08:44",
       "organizationId": 1,
       "waypoints": [
         {
           "order": 1,
-          "name": "Stop 1",
-          "lat": -12.065519,
-          "lng": -77.06407
+          "name": "Parada 1",
+          "lat": -12.040604,
+          "lng": -77.033815,
+          "studentId": 1
         },
         {
           "order": 2,
-          "name": "Stop 2",
-          "lat": -12.071177,
-          "lng": -77.075689
+          "name": "Parada 2",
+          "lat": -12.028841,
+          "lng": -76.990469,
+          "studentId": 3
+        },
+        {
+          "order": 3,
+          "name": "Parada 3",
+          "lat": -12.042727,
+          "lng": -76.986265,
+          "studentId": 5
+        },
+        {
+          "order": 4,
+          "name": "Parada 4",
+          "lat": -12.075462,
+          "lng": -77.023087,
+          "studentId": 6
+        },
+        {
+          "order": 5,
+          "name": "Parada 5",
+          "lat": -12.080812,
+          "lng": -77.067029,
+          "studentId": 2
         }
       ]
     }
@@ -245,7 +323,7 @@
       "endTime": null,
       "studentsTotal": 3,
       "studentsBoarded": 2,
-      "currentStop": "Av. Angélica Gamarra cdra. 8",
+      "currentStop": "Jr. Las Orquídeas 342",
       "currentLocation": "Av. Universitaria cdra. 48, Los Olivos",
       "organizationId": 1
     },
@@ -297,6 +375,26 @@
       "currentStop": null,
       "currentLocation": "Urb. Zárate",
       "organizationId": 1
+    },
+    {
+      "routeId": 0,
+      "routeName": "Ruta Sur",
+      "driverId": 2,
+      "driverName": "",
+      "vehiclePlate": "",
+      "studentIds": [],
+      "tripType": "OUTBOUND",
+      "scheduledDate": "2026-05-12",
+      "scheduledStartTime": "08:44",
+      "status": "SCHEDULED",
+      "startTime": null,
+      "endTime": null,
+      "studentsTotal": 0,
+      "studentsBoarded": 0,
+      "currentStop": null,
+      "currentLocation": null,
+      "organizationId": 1,
+      "id": 4
     }
   ],
   "profiles": [
@@ -521,56 +619,28 @@
       "organizationId": 1,
       "planId": 2,
       "status": "ACTIVE",
-      "startDate": "2026-04-01",
-      "endDate": "2026-06-01"
+      "startDate": "2026-04-01T00:00:00Z",
+      "endDate": "2026-06-01T00:00:00Z"
     },
     {
-      "planId": 3,
-      "organizationId": 1,
+      "organizationId": 5,
+      "planId": 2,
+      "planName": "Intermedio",
+      "planPrice": 24.99,
       "status": "ACTIVE",
-      "startDate": "2026-05-10",
-      "endDate": "2026-06-09",
+      "startDate": "2026-05-12",
+      "endDate": "2026-06-11",
       "id": 2
     },
     {
-      "planId": 3,
-      "organizationId": 1,
+      "organizationId": 7,
+      "planId": 2,
+      "planName": "Intermedio",
+      "planPrice": 24.99,
       "status": "ACTIVE",
-      "startDate": "2026-05-10",
-      "endDate": "2026-06-09",
+      "startDate": "2026-05-12",
+      "endDate": "2026-06-11",
       "id": 3
-    },
-    {
-      "planId": 3,
-      "organizationId": 1,
-      "status": "ACTIVE",
-      "startDate": "2026-05-10",
-      "endDate": "2026-06-09",
-      "id": 4
-    },
-    {
-      "planId": 3,
-      "organizationId": 1,
-      "status": "ACTIVE",
-      "startDate": "2026-05-10",
-      "endDate": "2026-06-09",
-      "id": 5
-    },
-    {
-      "planId": 3,
-      "organizationId": 1,
-      "status": "ACTIVE",
-      "startDate": "2026-05-10",
-      "endDate": "2026-06-09",
-      "id": 6
-    },
-    {
-      "planId": 3,
-      "organizationId": 1,
-      "status": "ACTIVE",
-      "startDate": "2026-05-10",
-      "endDate": "2026-06-09",
-      "id": 7
     }
   ],
   "notifications": [
